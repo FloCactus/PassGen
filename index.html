@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="passwordGen.js" defer></script>
+  <title>Password Generator</title>
+</head>
+<body>
+    <div class="passwordContainer">
+      <div class="passwordHeader">
+        <div class="password" >
+          <span id="password">1426GPj&$hg</span>
+          <button id="copy">Copy</button>
+        </div>
+      </div>
+      <div class="passwordBody">
+        <div class="form-control">
+            <label for="length">Password Length</label>
+            <input id ="length" type="number"value="10" min="4" max="40">
+        </div>
+        <div class="form-control">
+            <label for="upper">Contain Uppercase Letters</label>
+            <input id ="upper" type="checkbox">
+        </div>
+        <div class="form-control">
+            <label for="lower">Contain Lowercase Letters</label>
+            <input id ="lower" type="checkbox">
+        </div>
+        <div class="form-control">
+            <label for="number">Contain Numbers</label>
+            <input id ="number" type="checkbox">
+        </div>
+        <div class="form-control">
+            <label for="symbol">Contain Symbols</label>
+            <input id ="symbol" type="checkbox">
+        </div>
+        <button class="generate" id="generate">
+          Generate Password
+        </button>
+      </div>
+    </div>
+</body>
+</html>
